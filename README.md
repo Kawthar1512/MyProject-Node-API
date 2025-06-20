@@ -6,31 +6,32 @@ Requirements
 - Node.js
 - Express.js
 - Postman or cURL for testing
-- (Optional) Apache Benchmark or Artillery
-  Folder Structure
-  scalable-node-api/
-  ├── server.js
-  ├── package.json
-  └── quotes.json
-  Step 1: Initialize the Project
-  Run the following commands in your terminal:
-  mkdir scalable-node-api
-  cd scalable-node-api
-  npm init -y
-  npm install express
-  Step 2: Add Sample Data (quotes.json)
-  [
-  "Believe in yourself!",
-  "Success is not final; failure is not fatal.",
-  "Stay hungry, stay foolish.",
-  "Node.js is awesome!",
-  "Concurrency made easy."
-  ]
-  Step 3: Create the Server (server.js)
-  const express = require('express');
-  const fs = require('fs');
-  const app = express();
-  const PORT = 3000;
+- Artillery
+
+Folder Structure
+Myproject-node-api/
+├── server.js
+├── package.json
+└── quotes.json
+Step 1: Initialize the Project
+Run the following commands in your terminal:
+mkdir Myproject-node-api
+cd Myproject-node-api
+npm init -y
+npm install express
+Step 2: Add Sample Data (quotes.json)
+[
+"Believe in yourself!",
+"Success is not final; failure is not fatal.",
+"Stay hungry, stay foolish.",
+"Node.js is awesome!",
+"Concurrency made easy."
+]
+Step 3: Create the Server (server.js)
+const express = require('express');
+const fs = require('fs');
+const app = express();
+const PORT = 3000;
 
 let quotes = [];
 
@@ -79,8 +80,7 @@ scenarios:
   This test simulated 50 users per second over 30 seconds, resulting in a high number of successful API hits. The server handled the requests smoothly, without crashing or slowing down. This confirms Node.js's ability to scale under concurrent load thanks to its non-blocking I/O model.
 
 Conclusion
-This simple web application showcases Node.js’s ability to handle asynchronous I/O and concurrent connections efficiently, making it a powerful choice for scalable network applications.
+This simple web application showcases Node.js’s ability to handle asynchronous I/O and concurrent connections efficiently, making it a powerful choice for Myproject network applications.
 
-Author
-Kawthar Abolade
-e-mail - kawthar1512@yahoo.com
+Author : Kawthar Abolade
+kawthar1512@yahoo.com
